@@ -6,6 +6,7 @@ import {
   ArrowRight,
   Sparkles,
   Mail,
+  Phone,
   Code2,
   Cpu,
   Database,
@@ -110,6 +111,13 @@ export default function Hero() {
                 aria-label="Send Email"
               >
                 <Mail className="w-4 h-4" />
+              </a>
+              <a
+                href={`tel:${personalInfo.socials.phoneRaw || "+919026840092"}`}
+                className="p-2 rounded-lg bg-slate-900/60 border border-white/10 hover:border-cyan-400/50 hover:text-cyan-300 transition-colors"
+                aria-label="Call or WhatsApp"
+              >
+                <Phone className="w-4 h-4" />
               </a>
             </div>
           </div>

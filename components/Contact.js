@@ -6,6 +6,7 @@ import { GithubIcon, LinkedinIcon } from "@/components/Icons";
 import { sendContactEmail } from "@/actions/resend";
 import {
   Mail,
+  Phone,
   Send,
   Clock,
   Sparkles,
@@ -149,6 +150,19 @@ export default function Contact() {
                   <div>
                     <span className="text-[11px] text-slate-400 block font-mono">Email Address</span>
                     <span className="font-medium text-xs sm:text-sm">{personalInfo.socials.email}</span>
+                  </div>
+                </a>
+
+                <a
+                  href={`tel:${personalInfo.socials.phoneRaw || "+919026840092"}`}
+                  className="flex items-center gap-3.5 p-3 rounded-xl bg-slate-900/60 border border-white/5 hover:border-cyan-500/30 hover:text-cyan-300 transition-all text-slate-200 text-sm group"
+                >
+                  <div className="w-9 h-9 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 group-hover:scale-105 transition-transform">
+                    <Phone className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-[11px] text-slate-400 block font-mono">Phone / WhatsApp</span>
+                    <span className="font-medium text-xs sm:text-sm">{personalInfo.socials.phone || "+91 9026840092"}</span>
                   </div>
                 </a>
 

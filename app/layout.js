@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import FloatingWhatsBtn from "@/components/FloatingWhatsBtn";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-screen bg-[#060913] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
         {children}
+        <FloatingWhatsBtn />
       </body>
     </html>
   );

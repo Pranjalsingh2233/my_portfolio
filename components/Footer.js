@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { personalInfo } from "@/data/portfolio";
 import { GithubIcon, LinkedinIcon } from "@/components/Icons";
-import { Mail, Terminal, ArrowUp } from "lucide-react";
+import { Mail, Phone, Terminal, ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState("2026");
@@ -96,6 +96,13 @@ export default function Footer() {
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4" />
+              </a>
+              <a
+                href={`tel:${personalInfo.socials.phoneRaw || "+919026840092"}`}
+                className="w-9 h-9 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-400 hover:text-cyan-300 hover:border-cyan-500/40 transition-colors"
+                aria-label="Call or WhatsApp"
+              >
+                <Phone className="w-4 h-4" />
               </a>
             </div>
           </div>

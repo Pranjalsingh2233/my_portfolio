@@ -19,7 +19,7 @@ export default function Projects() {
       case "leadgen":
         return (
           <div className="relative w-full h-52 bg-gradient-to-br from-slate-900 via-cyan-950/40 to-slate-900 flex flex-col justify-between p-5 overflow-hidden rounded-2xl border border-white/5 group-hover:border-cyan-500/30 transition-all">
-            <div className="flex items-center justify-between z-10">
+            <div className="flex items-center justify-between z-10 flex-row max-[399px]:flex-col gap-2">
               <span className="flex items-center gap-1.5 text-xs font-mono font-medium text-cyan-300 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-500/30">
                 <Users className="w-3.5 h-3.5 text-cyan-400" />
                 <span>Lead Intelligence</span>
@@ -32,12 +32,12 @@ export default function Projects() {
 
             {/* Lead Gen UI Mockup Elements */}
             <div className="relative z-10 bg-slate-900/85 backdrop-blur-md rounded-xl p-3 border border-white/10 shadow-lg">
-              <div className="flex items-center justify-between gap-2 mb-2">
+              <div className="flex items-center justify-between gap-2 mb-2 ">
                 <div className="flex items-center gap-1.5 text-[11px] text-slate-300 bg-slate-800/80 px-2 py-1 rounded-md border border-white/5 flex-1">
                   <Search className="w-3 h-3 text-cyan-400" />
                   <span className="truncate">SaaS Companies • United States</span>
                 </div>
-                <span className="text-[10px] px-2 py-1 rounded bg-cyan-500/20 text-cyan-300 font-mono font-semibold">
+                <span className="text-[10px] px-2 py-1 rounded bg-cyan-500/20 text-cyan-300 font-mono font-semibold max-[399px]:hidden">
                   Export CSV
                 </span>
               </div>
@@ -66,21 +66,17 @@ export default function Projects() {
       case "shopify":
         return (
           <div className="relative w-full h-52 bg-gradient-to-br from-slate-900 via-emerald-950/40 to-slate-900 flex flex-col justify-between p-5 overflow-hidden rounded-2xl border border-white/5 group-hover:border-emerald-500/30 transition-all">
-            <div className="flex items-center justify-between z-10">
+            <div className="flex items-center justify-between z-10 flex-row max-[399px]:flex-col gap-2">
               <span className="flex items-center gap-1.5 text-xs font-mono font-medium text-emerald-300 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-500/30">
                 <ShoppingBag className="w-3.5 h-3.5 text-emerald-400" />
                 <span>Shopify Scraper & Sync</span>
-              </span>
-              <span className="text-[11px] font-mono text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-500/20 flex items-center gap-1">
-                <Sparkles className="w-3 h-3 text-cyan-300" />
-                <span>AI Enriched</span>
               </span>
             </div>
 
             {/* Shopify Importer UI Mockup Elements */}
             <div className="relative z-10 bg-slate-900/85 backdrop-blur-md rounded-xl p-3 border border-white/10 shadow-lg">
               <div className="flex items-center justify-between mb-1.5">
-                <span className="text-xs font-bold text-white">Bulk Product Editor</span>
+                <span className="text-xs font-bold text-white">Bulk Product Sync</span>
                 <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono">
                   Store Connected
                 </span>
@@ -90,7 +86,7 @@ export default function Projects() {
               </p>
               <div className="flex items-center gap-2">
                 <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">
-                  Bulk Edit
+                  Bulk Sync
                 </span>
                 <span className="text-[10px] px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 flex items-center gap-1">
                   <RefreshCw className="w-2.5 h-2.5 animate-spin" /> Auto-Sync

@@ -29,6 +29,8 @@ export const personalInfo = {
     github: "https://github.com/Pranjalsingh2233",
     linkedin: "https://www.linkedin.com/in/pranjal-singh-642594278/",
     email: "pranjalhanu66@gmail.com",
+    phone: "+91 9026840092",
+    phoneRaw: "+919026840092",
     location: "Available for Remote & Global Opportunities",
     status: "Open to Freelance & Full-time Roles",
   },
